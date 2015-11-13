@@ -558,30 +558,30 @@
 		                required: true,
 		            },
 		             message: {
-		                required: true
+		                required: false
 		            }
 		        },
 		        messages: {
 		            name: {
-		                required: "Please Enter Your Name",
-		                minlength: "your name must consist of at least 2 characters"
+		                required: "Insira seu nome",
+		                minlength: "O nome deve ter pelo menos duas letras."
 		            },
 		            email: {
-		                required: "Please Enter Your Email Address"
+		                required: "Insira seu e-mail"
 		            },
 		            subject: {
-		                required: "Please Enter Your Message Subject"
+		                required: "Confime se poderá ir."
 		            },
 		            message: {
-		                required: "Please Enter Your Message.",
-		                minlength: "Your Message Is Too Long!"
+		                required: "Deixe uma mensagem",
+		                minlength: "Mensagem muito longa!"
 		            },
 		        },
 		        submitHandler: function(form) {
 		            $(form).ajaxSubmit({
 		                type:"POST",
 		                data: $(form).serialize(),
-		                url:"contact.php",
+		                url:"http://formspree.io/marciooya@gmail.com",
 		                success: function() {
 		                    $('#contactform').clearForm();
 		                    $('#cf-success').css("display", "block").css("opacity", "1");
