@@ -450,11 +450,11 @@ li#about-link a.nav-current h3, li#about-link a.nav-current i {
 
 li#resume-link a.nav-current {
   border-width: 2px;
-  border-color: #d7af0d;
+  border-color: #330048;
 }
 
 li#resume-link a.nav-current h3, #resume-link a.nav-current i {
-  color: #d7af0d;
+  color: #330048;
 }
 
 li#portfolio-link a.nav-current {
@@ -911,7 +911,7 @@ li#contact-link a.nav-current h3, #contact-link a.nav-current i {
  */
 
 #resume, #resume .cat-pages-title h2 {
-  background-color: #d7af0d;
+  background-color: #330048;
 }
 
 .timeline {
