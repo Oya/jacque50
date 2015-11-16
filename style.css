@@ -1899,7 +1899,7 @@ ol.bjqs-markers li.active-marker { border: 1px solid #84c0e9; padding: 1px; marg
   position: relative;
   float: none;
   overflow: hidden;
-  margin: 0 auto;
+  margin: 0 auto 100px;
 }
 
 .contact-info {
