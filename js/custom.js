@@ -585,7 +585,7 @@
 		            $(form).ajaxSubmit({
 		                type:"POST",
 		                data: $(form).serialize(),
-		                url:"http://formspree.io/50dajacque@gmail.com",
+		                url:"http://formspree.io/50dajacquegmail.com",
 		                success: function() {
 		                    $('#contactform').clearForm();
 		                    $('#cf-success').css("display", "block").css("opacity", "1");
