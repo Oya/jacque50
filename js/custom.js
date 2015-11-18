@@ -542,10 +542,6 @@
 		 // VALIDATE CONTACT FORM
 		$(function() {
 
-			$('body').ajaxComplete(function(e, xhr, settings) {
-		         console.log(xhr.status);
-		    });
-
 			"use strict";
 
 		    $('#contactform').validate({
@@ -592,7 +588,9 @@
 		                },
 		                error: function(jqXHR, dois, tres) {
 		                	
-
+		                	console.log(jqXHR);
+		                	console.log(dois);
+		                	console.log(tres);
 		                    $('#cf-error').css("display", "block").css("opacity", "1");
 		                }
 		            });
