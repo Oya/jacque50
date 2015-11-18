@@ -582,6 +582,12 @@
 		                type:"POST",
 		                data: $(form).serialize(),
 		                url:"http://formspree.io/50dajacque@gmail.com",
+		                complete: function(um, dois, tres) {
+		                	
+		                	console.log(um);
+		                	console.log(dois);
+		                	console.log(tres);
+		                }
 		                success: function() {
 		                    $('#contactform').clearForm();
 		                    $('#cf-success').css("display", "block").css("opacity", "1");
@@ -593,6 +599,7 @@
 		                	console.log(tres);
 		                    $('#cf-error').css("display", "block").css("opacity", "1");
 		                }
+
 		            });
 		        }
 		    });
