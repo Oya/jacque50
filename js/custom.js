@@ -543,7 +543,7 @@
 		$(function() {
 
 			$('body').ajaxComplete(function(e, xhr, settings) {
-		         console.log(xhr);
+		         console.log(xhr.status);
 		    });
 
 			"use strict";
@@ -585,12 +585,12 @@
 		            $(form).ajaxSubmit({
 		                type:"POST",
 		                data: $(form).serialize(),
-		                url:"http://formspree.io/50dajacquegmail.com",
+		                url:"http://formspree.io/50dajacque@gmail.com",
 		                success: function() {
 		                    $('#contactform').clearForm();
 		                    $('#cf-success').css("display", "block").css("opacity", "1");
 		                },
-		                error: function(jqXHR) {
+		                error: function(jqXHR, dois, tres) {
 		                	
 
 		                    $('#cf-error').css("display", "block").css("opacity", "1");
