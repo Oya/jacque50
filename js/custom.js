@@ -587,7 +587,7 @@
 		                	console.log(um);
 		                	console.log(dois);
 		                	console.log(tres);
-		                }
+		                },
 		                success: function() {
 		                    $('#contactform').clearForm();
 		                    $('#cf-success').css("display", "block").css("opacity", "1");
