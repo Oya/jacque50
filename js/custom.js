@@ -576,27 +576,23 @@
 		                required: "Deixe uma mensagem",
 		                minlength: "Mensagem muito longa!"
 		            },
-		        },
+		        }
+		        ,
 		        submitHandler: function(form) {
-		            $(form).ajaxSubmit({
-		                type:"POST",
-		                data: $(form).serialize(),
-		                url:"http://formspree.io/50dajacque@gmail.com",
-		                complete: function(um, dois, tres) {
-		                	
-		                	console.log(um);
-		                	console.log(dois);
-		                	console.log(tres);
-		                },
-		                success: function() {
-		                    $('#contactform').clearForm();
-		                    $('#cf-success').css("display", "block").css("opacity", "1");
-		                },
-		                error: function(jqXHR, dois, tres) {
-		                    $('#cf-error').css("display", "block").css("opacity", "1");
-		                }
+		        	form.submit();
+		            // $(form).ajaxSubmit({
+		            //     type:"POST",
+		            //     data: $(form).serialize(),
+		            //     url:"http://formspree.io/50dajacque@gmail.com",
+		            //     success: function() {
+		            //         $('#contactform').clearForm();
+		            //         $('#cf-success').css("display", "block").css("opacity", "1");
+		            //     },
+		            //     error: function() {
+		            //         $('#cf-error').css("display", "block").css("opacity", "1");
+		            //     }
 
-		            });
+		            // });
 		        }
 		    });
 		});
