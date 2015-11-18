@@ -586,7 +586,9 @@
 		                    $('#contactform').clearForm();
 		                    $('#cf-success').css("display", "block").css("opacity", "1");
 		                },
-		                error: function() {
+		                error: function(jqXHR) {
+		                	console.log(jqXHR);
+
 		                    $('#cf-error').css("display", "block").css("opacity", "1");
 		                }
 		            });
